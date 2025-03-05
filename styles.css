@@ -1,0 +1,188 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #ff6600; /* Orange background */
+    color: #000; /* Black text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ff6600;
+    display: inline;
+}
+
+header nav {
+    display: inline;
+    margin-left: 20px;
+}
+
+header a {
+    color: #ff0000; /* Red hyperlinks */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+h2, h3 {
+    color: #000;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.post-form, .forums, .rules, .auth {
+    margin-bottom: 30px;
+}
+
+.post-form input, .post-form textarea, 
+.forum-form input, .forum-form textarea,
+.create-forum-form input, .create-forum-form textarea,
+.auth input {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #000;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.post-form textarea, .forum-form textarea, .create-forum-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.post-form button, .forum-form button, .create-forum-form button, .auth button {
+    background-color: #000;
+    color: #ff6600;
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+.post-form button:hover, .forum-form button:hover, 
+.create-forum-form button:hover, .auth button:hover {
+    background-color: #333;
+}
+
+.post-feed .post, .forums .forum-post {
+    margin-bottom: 15px;
+}
+
+.vote-buttons {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.upvote, .downvote {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.upvote:hover, .downvote:hover {
+    color: #ff0000;
+}
+
+.postpoints {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+.post-title, .section-title {
+    color: #ff0000; /* Red hyperlinks */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.post-title:hover, .section-title:hover {
+    text-decoration: underline;
+}
+
+.post-meta {
+    display: block;
+    color: #000;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.post-text {
+    color: #000;
+    font-size: 14px;
+    margin: 5px 0 0 60px;
+}
+
+.create-forum {
+    margin-bottom: 20px;
+}
+
+.forum-sections {
+    margin-bottom: 20px;
+}
+
+.forum-section {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
+
+.section-desc {
+    color: #000;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rules li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.rules li:before {
+    content: "- ";
+    color: #000;
+}
+
+.auth-forms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-form, .signin-form {
+    width: 45%;
+}
+
+.auth-input {
+    margin-bottom: 10px;
+}
