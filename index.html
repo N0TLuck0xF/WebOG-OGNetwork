@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGNetwork</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>OGNetwork</h1>
+        <nav>
+            <a href="#">home</a> | 
+            <a href="#submit">submit</a> | 
+            <a href="#forums">forums</a> | 
+            <a href="#rules">rules</a> | 
+            <a href="#auth">sign up</a> | 
+            <a href="#auth">sign in</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Submit Post Form -->
+        <section class="post-form" id="submit">
+            <form>
+                <input type="text" placeholder="Title" class="title-input">
+                <textarea placeholder="Text (optional)" class="text-input"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Post Feed -->
+        <section class="post-feed">
+            <h2>Latest Posts</h2>
+            <div class="post">
+                <span class="vote-buttons">
+                    <button class="upvote">▲</button>
+                    <span class="postpoints">5</span>
+                    <button class="downvote">▼</button>
+                </span>
+                <a href="#" class="post-title">Example Post Title</a>
+                <span class="post-meta">by user1 | 2 hours ago | 3 comments</span>
+                <p class="post-text">This is an example post with some text.</p>
+            </div>
+        </section>
+
+        <!-- Forums Section -->
+        <section class="forums" id="forums">
+            <h2>Forums</h2>
+            <!-- Create New Forum Section -->
+            <div class="create-forum">
+                <h3>Create a Forum Section</h3>
+                <form class="create-forum-form">
+                    <input type="text" placeholder="Forum Section Name" class="title-input">
+                    <textarea placeholder="Description (optional)" class="text-input"></textarea>
+                    <button type="submit">Create Forum</button>
+                </form>
+            </div>
+            <!-- Forum Sections List -->
+            <div class="forum-sections">
+                <div class="forum-section">
+                    <a href="#" class="section-title">Tech Talk</a>
+                    <p class="section-desc">Discuss the latest in technology.</p>
+                    <div class="forum-post">
+                        <span class="vote-buttons">
+                            <button class="upvote">▲</button>
+                            <span class="postpoints">3</span>
+                            <button class="downvote">▼</button>
+                        </span>
+                        <a href="#" class="post-title">New AI Breakthrough</a>
+                        <span class="post-meta">by user3 | 4 hours ago | 5 replies</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Forum Post Form -->
+            <form class="forum-form">
+                <input type="text" placeholder="Forum Topic Title" class="title-input">
+                <textarea placeholder="Your thoughts..." class="text-input"></textarea>
+                <button type="submit">Post to Forum</button>
+            </form>
+        </section>
+
+        <!-- Rules Section -->
+        <section class="rules" id="rules">
+            <h2>OGNetwork Rules</h2>
+            <ul>
+                <li>Keep it real: Share stuff that’s worth the read—cool ideas, solid info, or legit questions.</li>
+                <li>No noise: Skip the spam, ads, or off-topic rants. Stay on point.</li>
+                <li>Play nice: Respect the crew. No flames, no hate—just straight talk.</li>
+                <li>Quality over clout: Postpoints are for value, not drama. Upvote what’s good, downvote what’s weak.</li>
+                <li>Own it: Post what you mean, mean what you post. No sock puppets or shady moves.</li>
+                <li>Links matter: If you’re dropping a URL, make sure it’s legit and adds something.</li>
+                <li>Forum vibes: Sections are for focus—keep posts where they fit.</li>
+                <li>Break it, sit out: Mods can boot you if you can’t hang with the rules.</li>
+            </ul>
+        </section>
+
+        <!-- Sign Up / Sign In Section -->
+        <section class="auth" id="auth">
+            <h2>Account</h2>
+            <div class="auth-forms">
+                <form class="signup-form">
+                    <h3>Sign Up</h3>
+                    <input type="text" placeholder="Username" class="auth-input">
+                    <input type="password" placeholder="Password" class="auth-input">
+                    <button type="submit">Sign Up</button>
+                </form>
+                <form class="signin-form">
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Username" class="auth-input">
+                    <input type="password" placeholder="Password" class="auth-input">
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
